@@ -1,0 +1,17 @@
+@import './Variables/Variables.scss';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  color: white;
+
+  .navbar__menu-icon {
+    display: flex;
+  }
+
+  .icon {
+    font-size: $icon-font;
+  }
+}

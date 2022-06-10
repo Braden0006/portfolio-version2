@@ -4,6 +4,7 @@ import Homepage from "./Components/Homepage/Homepage";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
+import Contact from "./Components/Contact/Contact";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -26,6 +27,8 @@ function App() {
           </div>
         }
       />
+
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }

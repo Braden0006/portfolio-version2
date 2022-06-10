@@ -30,6 +30,7 @@ export default function Contact() {
             rows="10"
             placeholder="Message"
           ></textarea>
+          <input className="contact__form-submit" type="submit" />
         </form>
       </div>
       <span className="contact__icon-container">

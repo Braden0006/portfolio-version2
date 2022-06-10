@@ -1,0 +1,41 @@
+@import '../Variables/Variables.scss';
+
+.project {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .project__title {
+        font-size: $h2-font;
+        color: $white;
+    }
+
+    .project__grid {
+
+        .project__grid__beer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .project__grid__beer-title {
+                color: $white;
+                font-size: $h3-font;
+            }
+
+            .project__grid__beer-image {
+                height: 18rem;
+                border-radius: 1rem;
+            }
+    
+            .project__grid__beer-code {
+                background: $black;
+                color: $white;
+                margin-top: 1rem;
+                border: none;
+                outline: none;
+            }
+        }
+
+    }
+}

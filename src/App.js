@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
 import About from "./Components/About/About";
@@ -11,6 +11,13 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
+
+  const [open, setOpen] = useState(false)
+
+  const toggleOpen = () => {
+    setOpen(!open)
+  }
+
   return (
     <Routes>
       <Route
@@ -18,7 +25,7 @@ function App() {
         element={
           <div className="app">
             <div className="app__navbar-homepage">
-              <Navbar />
+              <Navbar toggleOpen={toggleOpen} open={open} />
               <Homepage />
             </div>
             <About />

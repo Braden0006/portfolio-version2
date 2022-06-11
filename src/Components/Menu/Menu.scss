@@ -1,0 +1,39 @@
+@import '../Variables/Variables.scss';
+
+.menu-background {
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+
+    .menu__icon-container {
+        display: flex;
+        justify-content: flex-end;
+        margin: 1rem 2rem 0rem 0rem;
+
+        .menu__icon-container__icon {
+            color: white;
+            font-size: 3rem;
+        }
+    }
+
+    .menu__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+
+        .menu__list {
+            list-style-type: none;
+            margin-right: 2rem;
+    
+            .menu__list-item {
+                color: white;
+                padding: 3rem;
+                font-size: $medium-font;
+            }
+        }
+    }
+
+}

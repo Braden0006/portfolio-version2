@@ -1,11 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import { AiOutlineClose } from "react-icons/ai";
 
 import "./Menu.css";
 
 export default function Menu({ toggleOpen, open }) {
+
+  // Object for the transition and animations of the list tag
   const variants = {
     hidden: {
       y: -1000,
@@ -19,6 +22,7 @@ export default function Menu({ toggleOpen, open }) {
     },
   };
 
+  // Object for the transition and animations of the list item
   const item = {
     hidden: {
       opacity: 0,
@@ -61,9 +65,11 @@ export default function Menu({ toggleOpen, open }) {
             <motion.li variants={item} className="menu__list-item">
               Projects
             </motion.li>
-            <motion.li variants={item} className="menu__list-item">
-              Contact
-            </motion.li>
+            <Link to="/contact">
+              <motion.li variants={item} className="menu__list-item">
+                Contact
+              </motion.li>
+            </Link>
           </motion.ul>
         </div>
       </motion.div>

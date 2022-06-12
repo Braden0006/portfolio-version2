@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import { AiOutlineClose } from "react-icons/ai";
 
 import "./Menu.css";
 
 export default function Menu({ toggleOpen, open }) {
-
   // Object for the transition and animations of the list tag
   const variants = {
     hidden: {
@@ -50,18 +50,22 @@ export default function Menu({ toggleOpen, open }) {
           />
         </span>
         <div className="menu__container">
-          <motion.ul
-            className="menu__list"
-          >
-            <motion.li variants={item} className="menu__list-item">
-              About
-            </motion.li>
-            <motion.li variants={item} className="menu__list-item">
-              Skills
-            </motion.li>
-            <motion.li variants={item} className="menu__list-item">
-              Projects
-            </motion.li>
+          <motion.ul className="menu__list">
+            <HashLink className="menu__list-item__link" to="#about" smooth>
+              <motion.li variants={item} className="menu__list-item">
+                About
+              </motion.li>
+            </HashLink>
+            <HashLink className="menu__list-item__link" to="#skills">
+              <motion.li variants={item} className="menu__list-item">
+                Skills
+              </motion.li>
+            </HashLink>
+            <HashLink className="menu__list-item__link" to="#projects">
+              <motion.li variants={item} className="menu__list-item">
+                Projects
+              </motion.li>
+            </HashLink>
             <Link className="menu__list-item__link" to="/contact">
               <motion.li variants={item} className="menu__list-item">
                 Contact

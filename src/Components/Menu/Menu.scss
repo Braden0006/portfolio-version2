@@ -31,13 +31,14 @@
 
             .menu__list-item__link {
                 text-decoration: none;
+                
+                .menu__list-item {
+                    color: white;
+                    padding: 3rem;
+                    font-size: $medium-font;
+                }
             }
     
-            .menu__list-item {
-                color: white;
-                padding: 3rem;
-                font-size: $medium-font;
-            }
         }
     }
 

@@ -28,6 +28,10 @@
         .menu__list {
             list-style-type: none;
             margin-right: 2rem;
+
+            .menu__list-item__link {
+                text-decoration: none;
+            }
     
             .menu__list-item {
                 color: white;

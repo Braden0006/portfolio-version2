@@ -52,9 +52,6 @@ export default function Menu({ toggleOpen, open }) {
         <div className="menu__container">
           <motion.ul
             className="menu__list"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: open ? 1 : 0 }}
-            transition={{ delay: 0.3, delayChildren: 0.5, staggerChildren: 1 }}
           >
             <motion.li variants={item} className="menu__list-item">
               About
@@ -65,7 +62,7 @@ export default function Menu({ toggleOpen, open }) {
             <motion.li variants={item} className="menu__list-item">
               Projects
             </motion.li>
-            <Link to="/contact">
+            <Link className="menu__list-item__link" to="/contact">
               <motion.li variants={item} className="menu__list-item">
                 Contact
               </motion.li>

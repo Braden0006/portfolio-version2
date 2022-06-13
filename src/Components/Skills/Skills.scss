@@ -24,3 +24,17 @@
         }
     }
 }
+
+// Media Query
+@media screen and (min-width: 768px) {
+    .skills {
+
+        .skills__title {
+            margin-bottom: 8rem;
+        }
+
+        .skills__grid {
+            column-gap: 24rem;
+        }
+    }
+}

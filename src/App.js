@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
 import About from "./Components/About/About";
@@ -11,11 +11,18 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
+  const [open, setOpen] = useState(false);
 
-  const [open, setOpen] = useState(false)
-
+  // toggles the "open" state to true or false
   const toggleOpen = () => {
-    setOpen(!open)
+    setOpen(!open);
+  };
+
+  // When the menu is open, the page cannot be scrolled
+  if (open) {
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = "scroll";
   }
 
   return (

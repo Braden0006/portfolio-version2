@@ -25,3 +25,29 @@
         font-size: 3rem;
     }
 }
+
+// Media Query
+@media screen and (min-width: 768px) {
+    .homepage {
+        height: 75%;
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (min-width: 1044px) {
+    .homepage {
+        margin-left: 8rem;
+
+        .homepage__title {
+            font-size: 7rem;
+        }
+
+        .homepage__name {
+            font-size: 6rem;
+        }
+
+        .homepage__position {
+            font-size: 4rem;
+        }
+    }
+}

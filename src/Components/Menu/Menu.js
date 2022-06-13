@@ -51,22 +51,22 @@ export default function Menu({ toggleOpen, open }) {
         </span>
         <div className="menu__container">
           <motion.ul className="menu__list">
-            <HashLink className="menu__list-item__link" to="#about" smooth onClick={toggleOpen}>
+            <HashLink className="menu__list-item__link" to="#about" smooth="true" onClick={toggleOpen}>
               <motion.li variants={item} className="menu__list-item">
                 About
               </motion.li>
             </HashLink>
-            <HashLink className="menu__list-item__link" to="#skills" smooth onClick={toggleOpen}>
+            <HashLink className="menu__list-item__link" to="#skills" smooth="true" onClick={toggleOpen}>
               <motion.li variants={item} className="menu__list-item">
                 Skills
               </motion.li>
             </HashLink>
-            <HashLink className="menu__list-item__link" to="#projects" smooth onClick={toggleOpen}>
+            <HashLink className="menu__list-item__link" to="#projects" smooth="true" onClick={toggleOpen}>
               <motion.li variants={item} className="menu__list-item">
                 Projects
               </motion.li>
             </HashLink>
-            <Link className="menu__list-item__link" to="/contact" smooth onClick={toggleOpen}>
+            <Link className="menu__list-item__link" to="/contact" smooth="true" onClick={toggleOpen}>
               <motion.li variants={item} className="menu__list-item">
                 Contact
               </motion.li>

@@ -38,3 +38,21 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .skills {
+
+        .skills__title {
+            font-size: 4.5rem;
+        }
+
+        .skills__grid {
+            column-gap: 36rem;
+            row-gap: 8rem;
+
+            .skills__grid-icon {
+                height: 8rem;
+            }
+        }
+    }
+}

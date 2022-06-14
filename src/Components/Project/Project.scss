@@ -40,3 +40,31 @@
 
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .project {
+
+        .project__title {
+            font-size: $title-font;
+        }
+
+        .project__grid {
+
+            .project__grid__beer {
+
+
+                .project__grid__beer-title {
+                    font-size: $description-font;
+                }
+
+                .project__grid__beer-image {
+                    height: 28rem;
+                }
+
+                .project__grid__beer-code {
+                    font-size: $medium-font;
+                }
+            }
+        }
+    }
+}

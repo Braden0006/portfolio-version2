@@ -41,5 +41,35 @@
     
         }
     }
+}
 
+// Media Query
+@media screen and (min-width: 1024px) {
+    .menu-background {
+        background-color: transparent;
+        transform: translateY(0) !important;
+        height: auto;
+        position: static;
+        width: auto;
+
+        .menu__icon-container__icon {
+            display: none;
+        }
+
+        .menu__container {
+
+            .menu__list {
+                display: flex;
+                margin-right: 0rem;
+
+                .menu__list-item__link {
+
+                    .menu__list-item {
+                        opacity: 1 !important;
+                        padding: 0rem 0rem 0rem 3rem;
+                    }
+                }
+            }
+        }
+    }
 }

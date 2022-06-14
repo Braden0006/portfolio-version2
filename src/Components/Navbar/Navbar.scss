@@ -1,4 +1,4 @@
-@import './Variables/Variables.scss';
+@import '../Variables/Variables.scss';
 
 .navbar {
   display: flex;
@@ -15,5 +15,15 @@
 
   .icon {
     font-size: $icon-font;
+  }
+}
+
+// Media Query
+@media screen and (min-width: 1024px) {
+  .navbar {
+
+    .navbar__menu-icon {
+      display: none;
+    }
   }
 }

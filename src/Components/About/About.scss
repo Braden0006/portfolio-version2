@@ -9,15 +9,36 @@
     align-items: center;
     justify-content: center;
 
-    .about__title, .about__info {
+    .about__title, .about__info-container__description {
         color: $white;
     }
-
+    
     .about__title {
         font-size: $h2-font;
     }
+    
+    .about__info-container {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        
+        .about__info-container__description {
+            font-size: $medium-font;
+        }
+    }
 
-    .about__info {
-        font-size: $medium-font;
+}
+
+// Media Query 
+@media screen and (min-width: 1440px) {
+    .about {
+
+        .about__title {
+            font-size: $title-font;
+        }
+
+        .about__info {
+            font-size: $description-font;
+        }
     }
 }

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["About.scss","../Variables/Variables.scss"],"names":[],"mappings":"AAEA,OACI,aACA,WACA,YACA,aACA,sBACA,mBACA,uBAEA,yCACI,MCLA,KDQJ,qBACI,UCfE,KDkBN,oBACI,UChBM","file":"About.css"}
+{"version":3,"sourceRoot":"","sources":["About.scss","../Variables/Variables.scss"],"names":[],"mappings":"AAEA,OACI,aACA,WACA,YACA,aACA,sBACA,mBACA,uBAEA,gEACI,MCHA,KDMJ,qBACI,UCfE,KDkBN,8BACI,aACA,sBACA,WAEA,kEACI,UCpBE,KD2Bd,sCAGQ,qBACI,UC9BC,KDiCL,oBACI,UCrCO","file":"About.css"}

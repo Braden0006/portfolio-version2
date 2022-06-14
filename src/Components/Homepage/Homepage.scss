@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 70%;
+    height: 95%;
     margin-left: 2rem;
 
     .homepage__title, .homepage__name, .homepage__position {
@@ -29,7 +29,6 @@
 // Media Query
 @media screen and (min-width: 768px) {
     .homepage {
-        height: 75%;
         margin-left: 6rem;
     }
 }

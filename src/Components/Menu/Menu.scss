@@ -29,13 +29,13 @@
             list-style-type: none;
             margin-right: 2rem;
 
-            .menu__list-item__link {
-                text-decoration: none;
+            .menu__list__item {
+                padding: 3rem;
+                font-size: $medium-font;
                 
-                .menu__list-item {
-                    color: white;
-                    padding: 3rem;
-                    font-size: $medium-font;
+                .menu__list__item__link {
+                    text-decoration: none;
+                    color: $white;
                 }
             }
     
@@ -62,12 +62,9 @@
                 display: flex;
                 margin-right: 0rem;
 
-                .menu__list-item__link {
-
-                    .menu__list-item {
-                        opacity: 1 !important;
-                        padding: 0rem 0rem 0rem 3rem;
-                    }
+                .menu__list__item {
+                    opacity: 1 !important;
+                    padding: 0rem 0rem 0rem 3rem;
                 }
             }
         }

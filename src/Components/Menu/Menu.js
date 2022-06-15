@@ -8,7 +8,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import "./Menu.css";
 
 export default function Menu({ toggleOpen, open }) {
-
   // Object for the transition and animations of the list tag
   const variants = {
     hidden: {
@@ -52,46 +51,46 @@ export default function Menu({ toggleOpen, open }) {
         </span>
         <div className="menu__container">
           <ul className="menu__list">
-            <HashLink
-              className="menu__list-item__link"
-              to="#about"
-              smooth="true"
-              onClick={toggleOpen}
-            >
-              <motion.li variants={item} className="menu__list-item">
+            <motion.li variants={item} className="menu__list__item">
+              <HashLink
+                className="menu__list__item__link"
+                to="#about"
+                smooth="true"
+                onClick={toggleOpen}
+              >
                 About
-              </motion.li>
-            </HashLink>
-            <HashLink
-              className="menu__list-item__link"
-              to="#skills"
-              smooth="true"
-              onClick={toggleOpen}
-            >
-              <motion.li variants={item} className="menu__list-item">
+              </HashLink>
+            </motion.li>
+            <motion.li variants={item} className="menu__list__item">
+              <HashLink
+                className="menu__list__item__link"
+                to="#skills"
+                smooth="true"
+                onClick={toggleOpen}
+              >
                 Skills
-              </motion.li>
-            </HashLink>
-            <HashLink
-              className="menu__list-item__link"
-              to="#projects"
-              smooth="true"
-              onClick={toggleOpen}
-            >
-              <motion.li variants={item} className="menu__list-item">
+              </HashLink>
+            </motion.li>
+            <motion.li variants={item} className="menu__list__item">
+              <HashLink
+                className="menu__list__item__link"
+                to="#projects"
+                smooth="true"
+                onClick={toggleOpen}
+              >
                 Projects
-              </motion.li>
-            </HashLink>
-            <Link
-              className="menu__list-item__link"
-              to="/contact"
-              smooth="true"
-              onClick={toggleOpen}
-            >
-              <motion.li variants={item} className="menu__list-item">
+              </HashLink>
+            </motion.li>
+            <motion.li variants={item} className="menu__list__item">
+              <Link
+                className="menu__list__item__link"
+                to="/contact"
+                smooth="true"
+                onClick={toggleOpen}
+              >
                 Contact
-              </motion.li>
-            </Link>
+              </Link>
+            </motion.li>
           </ul>
         </div>
       </motion.div>

@@ -7,9 +7,16 @@
     align-items: center;
     justify-content: center;
 
-    .skills__title {
-        color: $white;
-        font-size: $h2-font;
+    .skills__title-container {
+        width: 80vw;
+
+        .skills__title-container__title {
+            color: $white;
+            font-size: $h2-font;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid dodgerblue;
+            width: 9rem;
+        }
     }
 
     .skills__grid {
@@ -18,6 +25,7 @@
         grid-template-rows: repeat(4, 1fr);
         column-gap: 6rem;
         row-gap: 3rem;
+        margin-top: 3rem;
 
         .skills__grid-icon {
             height: 6rem;

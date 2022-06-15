@@ -7,9 +7,16 @@
     align-items: center;
     justify-content: center;
 
-    .project__title {
-        font-size: $h2-font;
-        color: $white;
+    .project__title-container {
+        width: 80vw;
+
+        .project__title-container__title {
+            font-size: $h2-font;
+            color: $white;
+            width: 13rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid dodgerblue;
+        }
     }
 
     .project__grid {

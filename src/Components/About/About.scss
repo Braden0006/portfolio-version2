@@ -2,11 +2,10 @@
 
 .about {
     height: 100vh;
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 
     .about__title, .about__info-container__description {
@@ -15,6 +14,9 @@
     
     .about__title {
         font-size: $h2-font;
+        padding-bottom: 0.4rem;
+        border-bottom: 2px solid dodgerblue;
+        width: 15rem;
     }
     
     .about__info-container {
@@ -24,6 +26,7 @@
         
         .about__info-container__description {
             font-size: $medium-font;
+            line-height: 4rem;
         }
     }
 

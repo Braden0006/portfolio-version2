@@ -36,6 +36,8 @@
                 .menu__list__item__link {
                     text-decoration: none;
                     color: $white;
+                    padding-bottom: 0.4rem;
+                    transition: border-bottom 1s;
                 }
             }
     

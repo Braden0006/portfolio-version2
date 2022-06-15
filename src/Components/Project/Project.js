@@ -17,7 +17,7 @@ export default function Project() {
             <img
               className="project__grid__beer-image"
               src="Images/beer-company.png"
-              alt=""
+              alt="A picture of a homepage of a beer company website"
             />
           </a>
           <a

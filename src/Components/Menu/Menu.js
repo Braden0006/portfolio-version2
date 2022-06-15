@@ -51,7 +51,7 @@ export default function Menu({ toggleOpen, open }) {
           />
         </span>
         <div className="menu__container">
-          <motion.ul className="menu__list">
+          <ul className="menu__list">
             <HashLink
               className="menu__list-item__link"
               to="#about"
@@ -92,7 +92,7 @@ export default function Menu({ toggleOpen, open }) {
                 Contact
               </motion.li>
             </Link>
-          </motion.ul>
+          </ul>
         </div>
       </motion.div>
     </>

@@ -7,6 +7,7 @@ import Project from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
 
 import { Routes, Route } from "react-router-dom";
+import { useMediaQuery } from "@mui/material";
 
 import "./App.css";
 
@@ -18,8 +19,10 @@ function App() {
     setOpen(!open);
   };
 
+  const breakpoint = useMediaQuery("(max-width: 1023px)");
+
   // When the menu is open, the page cannot be scrolled
-  if (open) {
+  if (open && breakpoint) {
     document.body.style.overflowY = "hidden";
   } else {
     document.body.style.overflowY = "scroll";

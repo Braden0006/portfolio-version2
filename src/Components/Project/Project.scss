@@ -1,7 +1,6 @@
 @import '../ProjectVariable/ProjectVariable.scss';
 
 .project {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +19,29 @@
     }
 }
 
-// Media Query
+// Media Query for tablet
+@media screen and (min-width: 768px) {
+    .project {
+
+        .project__grid {
+            margin-top: 4rem;
+        }
+    }
+}
+
+// Media Query for desktop
+@media screen and (min-width: 1024px) {
+    .project {
+
+        .project__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+            width: 90vw;
+        }
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .project {
 
@@ -30,18 +51,18 @@
 
         .project__grid {
 
-            .project__grid__beer {
+            .project__grid__site {
 
 
-                .project__grid__beer-title {
+                .project__grid__site__title {
                     font-size: $description-font;
                 }
 
-                .project__grid__beer-image {
+                .project__grid__site__image {
                     height: 28rem;
                 }
 
-                .project__grid__beer-code {
+                .project__grid__site__code {
                     font-size: $medium-font;
                 }
             }

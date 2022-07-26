@@ -33,7 +33,7 @@
     }
 }
 
-// Media Query
+// Media Query for tablet
 @media screen and (min-width: 768px) {
     .skills {
 
@@ -42,7 +42,17 @@
         }
 
         .skills__grid {
-            column-gap: 24rem;
+            column-gap: 20rem;
+            width: 80vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills {
+
+        .skills__grid {
+            margin-top: 6rem;
         }
     }
 }

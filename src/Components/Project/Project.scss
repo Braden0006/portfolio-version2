@@ -1,4 +1,4 @@
-@import '../Variables/Variables.scss';
+@import '../ProjectVariable/ProjectVariable.scss';
 
 .project {
     height: 100vh;
@@ -17,34 +17,6 @@
             padding-bottom: 0.4rem;
             border-bottom: 2px solid dodgerblue;
         }
-    }
-
-    .project__grid {
-
-        .project__grid__beer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .project__grid__beer-title {
-                color: $white;
-                font-size: $h3-font;
-            }
-
-            .project__grid__beer-image {
-                height: 18rem;
-                border-radius: 1rem;
-            }
-    
-            .project__grid__beer-code {
-                background: $black;
-                color: $white;
-                margin-top: 1rem;
-                border: none;
-                outline: none;
-            }
-        }
-
     }
 }
 

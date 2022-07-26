@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Project.css";
+import "../ProjectVariable/ProjectVariable.css";
 
 export default function Project() {
   return (
@@ -9,17 +10,17 @@ export default function Project() {
         <h2 className="project__title-container__title">Projects</h2>
       </div>
       <div className="project__grid">
-        <div className="project__grid__beer">
-          <h3 className="project__grid__beer-title">Beer Company Website</h3>
+        <div className="project__grid__site">
+          <h3 className="project__grid__site__title">Beer Company Website</h3>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://braden0006.github.io/beer-company-website/"
           >
             <img
-              className="project__grid__beer-image"
+              className="project__grid__site__image"
               src="Images/beer-company.png"
-              alt="A picture of a homepage of a beer company website"
+              alt="The homepage of a beer company website"
             />
           </a>
           <a
@@ -27,7 +28,29 @@ export default function Project() {
             rel="noreferrer"
             href="https://github.com/Braden0006/beer-company-website"
           >
-            <button className="project__grid__beer-code">See Live Code</button>
+            <button className="project__grid__site__code">See Live Code</button>
+          </a>
+        </div>
+
+        <div className="project__grid__site">
+          <h3 className="project__grid__site__title">Space Tourism Website</h3>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://braden0006.github.io/space-tourism-website"
+          >
+            <img
+              className="project__grid__site__image"
+              src="Images/space-website.png"
+              alt="The homepage of a space tourism website"
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Braden0006/space-tourism-website"
+          >
+            <button className="project__grid__site__code">See Live Code</button>
           </a>
         </div>
       </div>

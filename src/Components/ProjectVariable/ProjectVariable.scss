@@ -9,6 +9,7 @@
     .project__grid__site__title {
         color: $white;
         font-size: $h3-font;
+        font-family: $description;
     }
 
     .project__grid__site__image {
@@ -22,6 +23,7 @@
         margin-top: 1rem;
         border: none;
         outline: none;
+        font-family: $description;
     }
 }
 

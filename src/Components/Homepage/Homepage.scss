@@ -11,10 +11,11 @@
     .homepage__title, .homepage__name, .homepage__position {
         color: white;
         margin: 0;
+        font-family: $title;
     }
 
     .homepage__title {
-        font-size: 6rem;        
+        font-size: 6rem;    
     }
 
     .homepage__name {

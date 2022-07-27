@@ -53,6 +53,30 @@ export default function Project() {
             <button className="project__grid__site__code">See Live Code</button>
           </a>
         </div>
+
+        <div className="project__grid__site">
+          <h3 className="project__grid__site__title">
+            Coffee Roasters Website
+          </h3>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://braden0006.github.io/coffeeroasters-subscription-site/"
+          >
+            <img
+              className="project__grid__site__image"
+              src="Images/coffee-roasters.png"
+              alt="The homepage of a space tourism website"
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Braden0006/coffeeroasters-subscription-site"
+          >
+            <button className="project__grid__site__code">See Live Code</button>
+          </a>
+        </div>
       </div>
     </div>
   );

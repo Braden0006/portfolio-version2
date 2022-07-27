@@ -29,24 +29,28 @@ function App() {
   }
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <div className="app">
-            <div className="app__navbar-homepage">
-              <Navbar toggleOpen={toggleOpen} open={open} />
-              <Homepage />
-            </div>
-            <About />
-            <Skills />
-            <Project />
-          </div>
-        }
-      />
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <nav>
+                <Navbar toggleOpen={toggleOpen} open={open} />
+              </nav>
+              <main className="app">
+                <Homepage />
+                <About />
+                <Skills />
+                <Project />
+              </main>
+            </>
+          }
+        />
 
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 }
 

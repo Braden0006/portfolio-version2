@@ -2,7 +2,7 @@
 
 .menu-background {
     height: 100vh;
-    background-color: #000;
+    background-color: hsla(0, 0%, 0%, 0.935);
     position: fixed;
     width: 100vw;
     top: 0;
@@ -32,7 +32,8 @@
             .menu__list__item {
                 padding: 3rem;
                 font-size: $medium-font;
-                font-family: $description;
+                font-family: $title;
+                letter-spacing: $letter-spacing;
                 
                 .menu__list__item__link {
                     text-decoration: none;

@@ -1,5 +1,8 @@
 import React from "react";
 
+import SkillsCardOne from "../SkillsCardOne/SkillsCardOne";
+import SkillsCardTwo from "../SkillsCardTwo/SkillsCardTwo";
+
 import "./Skills.css";
 
 export default function Skills() {
@@ -7,16 +10,11 @@ export default function Skills() {
     <div className="skills" id="skills">
       <div className="skills__title-container">
         <h2 className="skills__title-container__title">Skills</h2>
+        <hr />
       </div>
-      <div className="skills__grid">
-        <img className="skills__grid-icon" src="Images/html-5.png" alt="" />
-        <img className="skills__grid-icon" src="Images/css-3.png" alt="" />
-        <img className="skills__grid-icon" src="Images/sass.png" alt="" />
-        <img className="skills__grid-icon" src="Images/js.png" alt="" />
-        <img className="skills__grid-icon" src="Images/atom.png" alt="" />
-        <img className="skills__grid-icon" src="Images/terminal.png" alt="" />
-        <img className="skills__grid-icon" src="Images/github.png" alt="" />
-      </div>
+
+      <SkillsCardOne />
+      <SkillsCardTwo />
     </div>
   );
 }

@@ -9,27 +9,55 @@
 
     .skills__title-container {
         width: 80vw;
+        margin-bottom: 3rem;
 
         .skills__title-container__title {
             color: $white;
             font-size: $h2-font;
-            padding-bottom: 0.4rem;
-            border-bottom: 2px solid dodgerblue;
             width: 9rem;
             font-family: $title;
+            letter-spacing: $letter-spacing;
         }
     }
 
-    .skills__grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        column-gap: 6rem;
-        row-gap: 3rem;
-        margin-top: 3rem;
+    .skills__group {
+        width: 80vw;
 
-        .skills__grid-icon {
-            height: 6rem;
+        .skills__group__card {
+            border-radius: 1rem;
+            display: flex;
+            margin: 2rem 0rem;
+            padding: 1rem;
+            flex-direction: column;
+            border: 1px solid #c11b1b;
+            height: 26rem;
+            justify-content: center;
+
+            .skills__group__card__icon {
+
+                .skills__group__card__icon__svg {
+                    height: 7rem;
+                    width: auto;
+                }
+            }
+
+            .skills__group__card__title {
+                color: $white;
+                font-size: $twenty;
+                font-family: $title;
+                letter-spacing: 0.1rem;
+                margin: 3rem 0 1rem 0;
+            }
+
+            .skills__group__card__description {
+                color: $white;
+                font-size: $sixteen;
+                font-family: $description;
+            }
+        }
+
+        .skills__groud__card-blue {
+            border: 1px solid rgb(18, 18, 148);
         }
     }
 }
@@ -41,20 +69,6 @@
         .skills__title {
             margin-bottom: 8rem;
         }
-
-        .skills__grid {
-            column-gap: 20rem;
-            width: 80vw;
-        }
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .skills {
-
-        .skills__grid {
-            margin-top: 6rem;
-        }
     }
 }
 
@@ -63,15 +77,6 @@
 
         .skills__title {
             font-size: $title-font;
-        }
-
-        .skills__grid {
-            column-gap: 36rem;
-            row-gap: 8rem;
-
-            .skills__grid-icon {
-                height: 8rem;
-            }
         }
     }
 }

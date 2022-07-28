@@ -4,10 +4,12 @@ import Homepage from "./Components/Homepage/Homepage";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
+import ProjectTablet from './ResponsiveComponents/ProjectTablet';
 import Contact from "./Components/Contact/Contact";
 
 import { Routes, Route } from "react-router-dom";
 import { useMediaQuery } from "@mui/material";
+import MediaQuery from "react-responsive";
 
 import "./App.css";
 
@@ -42,7 +44,12 @@ function App() {
                 <Homepage />
                 <About />
                 <Skills />
-                <Project />
+                <MediaQuery maxWidth={767}>
+                  <Project />
+                </MediaQuery>
+                <MediaQuery minWidth={768}>
+                  <ProjectTablet />
+                </MediaQuery>
               </main>
             </>
           }

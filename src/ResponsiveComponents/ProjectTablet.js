@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../ProjectVariable/ProjectVariable.css";
+import "../Components/ProjectVariable/ProjectVariable.css";
 
 export default function Project() {
   return (
@@ -11,7 +11,6 @@ export default function Project() {
       </div>
       <div className="project__grid">
         <div className="project__grid__site">
-          <h3 className="project__grid__site__title">Beer Company</h3>
           <a
             target="_blank"
             rel="noreferrer"
@@ -23,17 +22,21 @@ export default function Project() {
               alt="The homepage of a beer company website"
             />
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/Braden0006/beer-company-website"
-          >
-            <button className="project__grid__site__code">See Live Code</button>
-          </a>
+          <div className="project__grid__site__title-container">
+            <h3 className="project__grid__site__title">Beer Company</h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Braden0006/beer-company-website"
+            >
+              <button className="project__grid__site__code">
+                See Live Code
+              </button>
+            </a>
+          </div>
         </div>
 
-        <div className="project__grid__site">
-          <h3 className="project__grid__site__title">Space Tourism</h3>
+        <div className="project__grid__site project__grid__site-flipped">
           <a
             target="_blank"
             rel="noreferrer"
@@ -45,19 +48,21 @@ export default function Project() {
               alt="The homepage of a space tourism website"
             />
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/Braden0006/space-tourism-website"
-          >
-            <button className="project__grid__site__code">See Live Code</button>
-          </a>
+          <div className="project__grid__site__title-container">
+            <h3 className="project__grid__site__title">Space Tourism</h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Braden0006/space-tourism-website"
+            >
+              <button className="project__grid__site__code">
+                See Live Code
+              </button>
+            </a>
+          </div>
         </div>
 
         <div className="project__grid__site">
-          <h3 className="project__grid__site__title">
-            Coffee Roasters
-          </h3>
           <a
             target="_blank"
             rel="noreferrer"
@@ -69,13 +74,18 @@ export default function Project() {
               alt="The homepage of a space tourism website"
             />
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/Braden0006/coffeeroasters-subscription-site"
-          >
-            <button className="project__grid__site__code">See Live Code</button>
-          </a>
+          <div className="project__grid__site__title-container">
+            <h3 className="project__grid__site__title">Coffee Roasters</h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Braden0006/coffeeroasters-subscription-site"
+            >
+              <button className="project__grid__site__code">
+                See Live Code
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

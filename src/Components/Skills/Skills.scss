@@ -67,8 +67,14 @@
 @media screen and (min-width: 768px) {
     .skills {
 
-        .skills__title {
-            margin-bottom: 8rem;
+        .skills__cards {
+            display: flex;
+            width: 90vw;
+            gap: 2rem;
+
+            .skills__group {
+                width: 50%;
+            }
         }
     }
 }

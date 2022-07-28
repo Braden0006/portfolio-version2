@@ -13,8 +13,10 @@ export default function Skills() {
         <hr />
       </div>
 
-      <SkillsCardOne />
-      <SkillsCardTwo />
+      <div className="skills__cards">
+        <SkillsCardOne />
+        <SkillsCardTwo />
+      </div>
     </div>
   );
 }

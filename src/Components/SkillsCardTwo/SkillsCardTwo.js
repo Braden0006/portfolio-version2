@@ -38,7 +38,7 @@ export default function SkillsCardTwo() {
                 y2="-1112.96"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#121294" />
+                <stop stopColor="#1F51FF" />
                 <stop offset="1" stopColor="#3B72DE" />
               </linearGradient>
               <linearGradient
@@ -49,7 +49,7 @@ export default function SkillsCardTwo() {
                 y2="-1108.46"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#121294" />
+                <stop stopColor="#1F51FF" />
                 <stop offset="1" stopColor="#3B72DE" />
               </linearGradient>
               <linearGradient
@@ -60,7 +60,7 @@ export default function SkillsCardTwo() {
                 y2="-926.118"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#121294" />
+                <stop stopColor="#1F51FF" />
                 <stop offset="1" stopColor="#3B72DE" />
               </linearGradient>
               <linearGradient
@@ -71,7 +71,7 @@ export default function SkillsCardTwo() {
                 y2="-932.823"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#121294" />
+                <stop stopColor="#1F51FF" />
                 <stop offset="1" stopColor="#3B72DE" />
               </linearGradient>
             </defs>

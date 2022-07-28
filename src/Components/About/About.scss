@@ -11,13 +11,18 @@
     .about__title, .about__info-container__description {
         color: $white;
     }
-    
-    .about__title {
-        font-size: $thirty;
-        letter-spacing: $letter-spacing;
-        padding-bottom: 0.4rem;
-        font-family: $title;
+
+    .about__title-container {
+        margin-bottom: 3rem;
+
+        .about__title {
+            font-size: $thirty;
+            letter-spacing: $letter-spacing;
+            padding-bottom: 0.4rem;
+            font-family: $title;
+        }
     }
+    
     
     .about__info-container {
         display: flex;

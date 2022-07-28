@@ -29,7 +29,7 @@
             margin: 2rem 0rem;
             padding: 1rem;
             flex-direction: column;
-            border: 1px solid #c11b1b;
+            border: 1px solid #07f985;
             height: 26rem;
             justify-content: center;
 
@@ -53,11 +53,12 @@
                 color: $white;
                 font-size: $sixteen;
                 font-family: $description;
+                line-height: $twenty-six;
             }
         }
 
         .skills__groud__card-blue {
-            border: 1px solid rgb(18, 18, 148);
+            border: 1px solid #1f51ff;
         }
     }
 }

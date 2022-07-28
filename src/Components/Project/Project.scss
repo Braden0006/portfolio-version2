@@ -8,65 +8,12 @@
 
     .project__title-container {
         width: 80vw;
+        margin-bottom: 4rem;
 
         .project__title-container__title {
-            font-size: $h2-font;
+            font-size: $thirty;
             color: $white;
-            width: 13rem;
-            padding-bottom: 0.4rem;
-            border-bottom: 2px solid dodgerblue;
             font-family: $title;
-        }
-    }
-}
-
-// Media Query for tablet
-@media screen and (min-width: 768px) {
-    .project {
-
-        .project__grid {
-            margin-top: 4rem;
-        }
-    }
-}
-
-// Media Query for desktop
-@media screen and (min-width: 1024px) {
-    .project {
-
-        .project__grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 4rem;
-            width: 90vw;
-        }
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .project {
-
-        .project__title {
-            font-size: $title-font;
-        }
-
-        .project__grid {
-
-            .project__grid__site {
-
-
-                .project__grid__site__title {
-                    font-size: $description-font;
-                }
-
-                .project__grid__site__image {
-                    height: 28rem;
-                }
-
-                .project__grid__site__code {
-                    font-size: $medium-font;
-                }
-            }
         }
     }
 }

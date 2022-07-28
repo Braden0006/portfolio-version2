@@ -8,8 +8,9 @@
 
     .project__grid__site__title {
         color: $white;
-        font-size: $h3-font;
+        font-size: $twenty-two;
         font-family: $description;
+        margin-bottom: 1rem;
     }
 
     .project__grid__site__image {
@@ -20,33 +21,59 @@
     .project__grid__site__code {
         background: $black;
         color: $white;
-        margin-top: 1rem;
         border: none;
         outline: none;
         font-family: $description;
     }
 }
 
-// @mixin project__grid {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
+// Media Query for tablet
+@media screen and (min-width: 768px) {
+    .project {
 
-// @mixin project__grid__title {
-//     color: $white;
-//     font-size: $h3-font;
-// }
+        .project__grid {
+            margin-top: 4rem;
+        }
+    }
+}
 
-// @mixin project__grid__image {
-//     height: 18rem;
-//     border-radius: 1rem;
-// }
+// Media Query for desktop
+@media screen and (min-width: 1024px) {
+    .project {
 
-// @mixin project__grid__code {
-//     background: $black;
-//     color: $white;
-//     margin-top: 1rem;
-//     border: none;
-//     outline: none;
-// }
+        .project__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+            width: 90vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .project {
+
+        .project__title {
+            font-size: $title-font;
+        }
+
+        .project__grid {
+
+            .project__grid__site {
+
+
+                .project__grid__site__title {
+                    font-size: $description-font;
+                }
+
+                .project__grid__site__image {
+                    height: 28rem;
+                }
+
+                .project__grid__site__code {
+                    font-size: $medium-font;
+                }
+            }
+        }
+    }
+}

@@ -8,10 +8,11 @@ export default function Project() {
     <div className="project" id="projects">
       <div className="project__title-container">
         <h2 className="project__title-container__title">Projects</h2>
+        <hr />
       </div>
       <div className="project__grid">
         <div className="project__grid__site">
-          <h3 className="project__grid__site__title">Beer Company Website</h3>
+          <h3 className="project__grid__site__title">Beer Company</h3>
           <a
             target="_blank"
             rel="noreferrer"
@@ -33,7 +34,7 @@ export default function Project() {
         </div>
 
         <div className="project__grid__site">
-          <h3 className="project__grid__site__title">Space Tourism Website</h3>
+          <h3 className="project__grid__site__title">Space Tourism</h3>
           <a
             target="_blank"
             rel="noreferrer"
@@ -56,7 +57,7 @@ export default function Project() {
 
         <div className="project__grid__site">
           <h3 className="project__grid__site__title">
-            Coffee Roasters Website
+            Coffee Roasters
           </h3>
           <a
             target="_blank"

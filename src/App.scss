@@ -5,10 +5,15 @@
 
 html {
     font-size: 62.5%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .app {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .app__navbar-homepage {
         height: 100vh;

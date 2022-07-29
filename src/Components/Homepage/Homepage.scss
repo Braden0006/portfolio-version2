@@ -50,29 +50,52 @@
 
 }
 
-// Media Query
-@media screen and (min-width: 768px) {
+// Media query for desktop
+@media screen and (min-width: 1024px) {
     .homepage {
-        margin-left: 6rem;
+        display: flex;
+        width: 85vw;
+        height: 100vh;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+
+        .homepage__info {
+            width: 50%;
+
+            .homepage__info__title {
+                font-size: $eighteen;
+            }
+
+            .homepage__info__name {
+                font-size: $forty-five;
+            }
+
+            .homepage__info__position {
+                font-size: $twenty;
+            }
+        }
+
+        .homepage__image {
+            width: 50%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+
+            .homepage__image__svg {
+                height: 20rem;
+            }
+        }
     }
 }
 
 @media screen and (min-width: 1044px) {
     .homepage {
-        margin-left: 8rem;
 
-        .homepage__info {
+        .homepage__image {
 
-            .homepage__info__title {
-                font-size: 7rem;
-            }
-    
-            .homepage__info__name {
-                font-size: 6rem;
-            }
-    
-            .homepage__info__position {
-                font-size: 4rem;
+            .homepage__image__svg {
+                height: 22rem;
             }
         }
     }

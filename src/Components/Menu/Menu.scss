@@ -11,7 +11,9 @@
     .menu__icon-container {
         display: flex;
         justify-content: flex-end;
-        margin: 1rem 2rem 0rem 0rem;
+        height: 8rem;
+        align-items: center;
+        padding: 1rem 2rem;
 
         .menu__icon-container__icon {
             color: white;
@@ -31,7 +33,7 @@
 
             .menu__list__item {
                 padding: 3rem;
-                font-size: $medium-font;
+                font-size: $twenty;
                 font-family: $title;
                 letter-spacing: $letter-spacing;
                 

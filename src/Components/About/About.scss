@@ -13,7 +13,7 @@
     }
 
     .about__title-container {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
 
         .about__title {
             font-size: $thirty;
@@ -27,7 +27,6 @@
     .about__info-container {
         display: flex;
         flex-direction: column;
-        width: 80vw;
         
         .about__info-container__description {
             font-size: $sixteen;
@@ -39,16 +38,21 @@
 
 }
 
-// Media Query 
-@media screen and (min-width: 1440px) {
+// Media Query for tablet
+@media screen and (min-width: 768px) {
     .about {
+        height: 75vh;
+        width: 90vw;
 
-        .about__title {
-            font-size: $title-font;
+        .about__title-container {
+
+            .about__title {
+                font-size: $forty;
+            }
         }
 
         .about__info {
-            font-size: $description-font;
+            font-size: $description;
         }
     }
 }

@@ -25,16 +25,18 @@
 
         .skills__group {
             width: 80vw;
+            margin: 2rem 0rem;
+            border: 1px solid #07f985;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
     
             .skills__group__card {
-                border-radius: 1rem;
                 display: flex;
-                margin: 2rem 0rem;
-                padding: 1rem;
                 flex-direction: column;
-                border: 1px solid #07f985;
                 height: 26rem;
                 justify-content: center;
+                width: 90%;
     
                 .skills__group__card__icon {
     
@@ -60,9 +62,10 @@
                 }
             }
     
-            .skills__groud__card-blue {
-                border: 1px solid #1f51ff;
-            }
+        }
+
+        .skills__group-blue {
+            border: 1px solid #1f51ff !important;
         }
     }
 
@@ -71,7 +74,6 @@
 // Media Query for tablet
 @media screen and (min-width: 768px) {
     .skills {
-        height: 75vh;
 
         .skills__title-container {
 
@@ -92,6 +94,52 @@
                     .skills__group__card__title {
                         font-size: $twenty-two;
                     }
+                }
+            }
+        }
+    }
+}
+
+// Media query for desktop 
+@media screen and (min-width: 1024px) {
+    .skills {
+
+        .skills__title-container {
+            display: flex;
+            justify-content: center;
+
+            .skills__title-container__title {
+                font-size: $thirty;
+            }
+
+            .skills__title-container__line {
+                display: none;
+            }
+        }
+
+        .skills__cards {
+
+            .skills__group {
+
+                .skills__group__card {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .skills {
+
+        .skills__cards {
+            justify-content: center;
+
+            .skills__group {
+                width: 40.5%;
+
+                .skills__group__card {
+                    text-align: center;
                 }
             }
         }

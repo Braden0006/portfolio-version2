@@ -2,8 +2,8 @@ import React from "react";
 
 export default function SkillsCardTwo() {
   return (
-    <div className="skills__group">
-      <div className="skills__group__card skills__groud__card-blue">
+    <div className="skills__group skills__group-blue">
+      <div className="skills__group__card">
         <span className="skills__group__card__icon">
           <svg
             className="skills__group__card__icon__svg"

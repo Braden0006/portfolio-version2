@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
 import About from "./Components/About/About";
+import AboutDesktop from "./ResponsiveComponents/AboutDesktop";
 import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
-import ProjectTablet from './ResponsiveComponents/ProjectTablet';
+import ProjectTablet from "./ResponsiveComponents/ProjectTablet";
 import Contact from "./Components/Contact/Contact";
 
 import { Routes, Route } from "react-router-dom";
@@ -42,11 +43,21 @@ function App() {
               </nav>
               <main className="app">
                 <Homepage />
-                <About />
+
+                <MediaQuery maxWidth={1023}>
+                  <About />
+                </MediaQuery>
+
+                <MediaQuery minWidth={1024}>
+                  <AboutDesktop />
+                </MediaQuery>
+
                 <Skills />
+
                 <MediaQuery maxWidth={767}>
                   <Project />
                 </MediaQuery>
+
                 <MediaQuery minWidth={768}>
                   <ProjectTablet />
                 </MediaQuery>

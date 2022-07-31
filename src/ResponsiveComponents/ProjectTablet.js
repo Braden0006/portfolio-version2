@@ -22,14 +22,16 @@ export default function Project() {
               alt="The homepage of a beer company website"
             />
           </a>
-          <div className="project__grid__site__title-container">
-            <h3 className="project__grid__site__title">Beer Company</h3>
+          <div className="project__grid__site__overlay">
+            <h3 className="project__grid__site__overlay__title">
+              Beer Company
+            </h3>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/Braden0006/beer-company-website"
             >
-              <button className="project__grid__site__code">
+              <button className="project__grid__site__overlay__code">
                 See Live Code
               </button>
             </a>
@@ -48,14 +50,14 @@ export default function Project() {
               alt="The homepage of a space tourism website"
             />
           </a>
-          <div className="project__grid__site__title-container">
-            <h3 className="project__grid__site__title">Space Tourism</h3>
+          <div className="project__grid__site__overlay">
+            <h3 className="project__grid__site__overlay__title">Space Tourism</h3>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/Braden0006/space-tourism-website"
             >
-              <button className="project__grid__site__code">
+              <button className="project__grid__site__overlay__code">
                 See Live Code
               </button>
             </a>
@@ -74,14 +76,14 @@ export default function Project() {
               alt="The homepage of a space tourism website"
             />
           </a>
-          <div className="project__grid__site__title-container">
-            <h3 className="project__grid__site__title">Coffee Roasters</h3>
+          <div className="project__grid__site__overlay">
+            <h3 className="project__grid__site__overlay__title">Coffee Roasters</h3>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/Braden0006/coffeeroasters-subscription-site"
             >
-              <button className="project__grid__site__code">
+              <button className="project__grid__site__overlay__code">
                 See Live Code
               </button>
             </a>

@@ -15,6 +15,7 @@
       font-size: $thirty;
       color: $white;
       font-family: $title;
+      letter-spacing: $letter-spacing;
     }
   }
 
@@ -31,6 +32,7 @@
       align-items: center;
       position: relative;
       width: 80vw;
+      height: 100%;
 
       .project__grid__site__image {
         height: 100%;
@@ -54,12 +56,14 @@
         align-items: center;
         justify-content: center;
         background: #3b485465;
+        border-radius: 1rem;
 
         .project__grid__site__overlay__title {
           color: $white;
           font-size: $twenty-two;
           font-family: $description;
           margin-bottom: 1rem;
+          cursor: pointer;
         }
   
         .project__grid__site__overlay__code {
@@ -68,6 +72,7 @@
           border: none;
           outline: none;
           font-family: $description;
+          cursor: pointer;
         }
       }
     }
@@ -113,26 +118,45 @@
 }
 
 // Media Query for desktop
-// @media screen and (min-width: 1440px) {
-//   .project {
-//     .project__title {
-//       font-size: $forty;
-//     }
+@media screen and (min-width: 1024px) {
+  .project {
+    height: 80vh;
 
-//     .project__grid {
-//       .project__grid__site {
-//         .project__grid__site__title {
-//           font-size: $twenty-five;
-//         }
+    .project__title-container {
 
-//         .project__grid__site__image {
-//           height: 28rem;
-//         }
+      .project__title-container__title {
+        text-align: center;
+        font-size: $thirty;
+      }
 
-//         .project__grid__site__code {
-//           font-size: $twenty;
-//         }
-//       }
-//     }
-//   }
-// }
+      .project__title-container__line {
+        display: none;
+      }
+    }
+
+    .project__grid {
+      flex-direction: row;
+      width: 90vw;
+      gap: 3rem;
+
+      .project__grid__site {
+
+        .project__grid__site__image {
+          opacity: 1;
+        }
+
+        .project__grid__site__overlay {
+          opacity: 0;
+        }
+      }
+
+      .project__grid__site:hover .project__grid__site__image {
+        opacity: 0.3;
+      }
+
+      .project__grid__site:hover .project__grid__site__overlay {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -5,7 +5,6 @@ import About from "./Components/About/About";
 import AboutDesktop from "./ResponsiveComponents/AboutDesktop";
 import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
-import ProjectTablet from "./ResponsiveComponents/ProjectTablet";
 import Contact from "./Components/Contact/Contact";
 
 import { Routes, Route } from "react-router-dom";
@@ -54,13 +53,7 @@ function App() {
 
                 <Skills />
 
-                <MediaQuery maxWidth={767}>
-                  <Project />
-                </MediaQuery>
-
-                <MediaQuery minWidth={768}>
-                  <ProjectTablet />
-                </MediaQuery>
+                <Project />
               </main>
             </>
           }

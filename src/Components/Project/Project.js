@@ -7,7 +7,7 @@ export default function Project() {
     <div className="project" id="projects">
       <div className="project__title-container">
         <h2 className="project__title-container__title">Projects</h2>
-        <hr />
+        <hr className="project__title-container__line" />
       </div>
       <div className="project__grid">
         <div className="project__grid__site">
@@ -18,9 +18,15 @@ export default function Project() {
           />
 
           <div className="project__grid__site__overlay">
-            <h3 className="project__grid__site__overlay__title">
-              Beer Company
-            </h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://braden0006.github.io/beer-company-website/"
+            >
+              <h3 className="project__grid__site__overlay__title">
+                Beer Company
+              </h3>
+            </a>
             <a
               target="_blank"
               rel="noreferrer"
@@ -41,9 +47,15 @@ export default function Project() {
           />
 
           <div className="project__grid__site__overlay">
-            <h3 className="project__grid__site__overlay__title">
-              Space Tourism
-            </h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://braden0006.github.io/space-tourism-website/"
+            >
+              <h3 className="project__grid__site__overlay__title">
+                Space Tourism
+              </h3>
+            </a>
             <a
               target="_blank"
               rel="noreferrer"
@@ -64,9 +76,15 @@ export default function Project() {
           />
 
           <div className="project__grid__site__overlay">
-            <h3 className="project__grid__site__overlay__title">
-              Coffee Roasters
-            </h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://braden0006.github.io/coffeeroasters-subscription-site/"
+            >
+              <h3 className="project__grid__site__overlay__title">
+                Coffee Roasters
+              </h3>
+            </a>
             <a
               target="_blank"
               rel="noreferrer"

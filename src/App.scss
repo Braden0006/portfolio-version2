@@ -28,4 +28,12 @@ a {
 .app-footer {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
+}
+
+// Media query
+@media screen and (min-width: 1024px) {
+    .app-footer {
+        margin-bottom: 4rem;
+    }
 }

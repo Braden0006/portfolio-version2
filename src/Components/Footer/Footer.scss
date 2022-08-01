@@ -18,9 +18,12 @@
         flex-direction: column;
 
         .footer__logo {
-            color: $white;
             font-size: $twenty-two;
             font-family: $logo-type;
+
+            .footer__logo__link {
+                color: $white;
+            }
         }
 
         .footer__social {
@@ -31,6 +34,52 @@
             .footer__social__icon {
                 font-size: $eighteen;
                 color: $white;
+            }
+        }
+    }
+}
+
+// Media query for tablet
+@media screen and (min-width: 768px) {
+    .footer-container {
+
+        .footer {
+
+            .footer__logo {
+                font-size: $twenty-five;
+            }
+
+            .footer__social {
+                width: 5rem;
+
+                .footer__social__icon {
+                    font-size: $twenty;
+                }
+            }
+        }
+    }
+}
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .footer-container {
+        height: 20vh;
+
+        .footer {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .footer__logo {
+                font-size: $twenty-five;
+            }
+
+            .footer__social {
+                width: 6rem;
+
+                .footer__social__icon {
+                    font-size: $twenty-two;
+                    cursor: pointer;
+                }
             }
         }
     }

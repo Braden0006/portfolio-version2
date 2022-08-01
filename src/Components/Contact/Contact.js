@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithubSquare } from "react-icons/fa";
-import { FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin } from "react-icons/fa";
 
 import "./Contact.css";
 

@@ -1,0 +1,41 @@
+@import "../Variables/Variables.scss";
+
+.question {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .question__title {
+    color: $white;
+    font-size: $thirty;
+    font-family: $title;
+    letter-spacing: $letter-spacing;
+    margin-bottom: 2rem;
+  }
+
+  .question__button {
+    font-family: $description;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    font-size: $eighteen;
+    padding: 1rem 2rem;
+    background-color: dodgerblue;
+    color: $white;
+    font-weight: 700;
+  }
+}
+
+// Media query
+@media screen and (min-width: 1024px) {
+  .question {
+    .question__button-link {
+      .question__button {
+        cursor: pointer;
+      }
+    }
+  }
+}

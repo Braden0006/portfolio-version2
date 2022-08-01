@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import AboutDesktop from "./ResponsiveComponents/AboutDesktop";
 import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
+import Question from "./Components/Question/Question";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
 
@@ -55,6 +56,8 @@ function App() {
                 <Skills />
 
                 <Project />
+
+                <Question />
               </main>
 
               <footer className="app-footer">

@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import AboutDesktop from "./ResponsiveComponents/AboutDesktop";
 import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
+import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
 
 import { Routes, Route } from "react-router-dom";
@@ -55,6 +56,10 @@ function App() {
 
                 <Project />
               </main>
+
+              <footer className="app-footer">
+                <Footer />
+              </footer>
             </>
           }
         />

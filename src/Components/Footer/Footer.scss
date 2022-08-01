@@ -1,0 +1,37 @@
+@import '../Variables/Variables.scss';
+
+.footer-container {
+    height: 25vh;
+    background-color: #9794942b;
+    width: 95vw;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+        .footer__logo {
+            color: $white;
+            font-size: $twenty-two;
+            font-family: $logo-type;
+        }
+
+        .footer__social {
+            width: 4rem;
+            display: flex;
+            justify-content: space-between;
+
+            .footer__social__icon {
+                font-size: $eighteen;
+                color: $white;
+            }
+        }
+    }
+}

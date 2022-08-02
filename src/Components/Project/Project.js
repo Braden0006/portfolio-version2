@@ -13,9 +13,16 @@ export default function Project() {
         <div className="project__grid__site">
           <img
             className="project__grid__site__image"
-            src="Images/beer-company.png"
-            alt="The homepage of a beer company website"
-          />
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcSet="
+              Images/beer-company_sjf9op_c_scale,w_190.png 190w,
+              Images/beer-company_sjf9op_c_scale,w_638.png 638w,
+              Images/beer-company_sjf9op_c_scale,w_930.png 930w,
+              Images/beer-company_sjf9op_c_scale,w_1190.png 1190w,
+              Images/beer-company_sjf9op_c_scale,w_1400.png 1400w"
+            src="Images/beer-company_sjf9op_c_scale,w_1400.png"
+            alt="the home page of a beer company website"
+          ></img>
 
           <div className="project__grid__site__overlay">
             <a
@@ -42,9 +49,16 @@ export default function Project() {
         <div className="project__grid__site">
           <img
             className="project__grid__site__image"
-            src="Images/space-website.png"
-            alt="The homepage of a space tourism website"
-          />
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcSet="
+              Images/space-website_wqqxp4_c_scale,w_190.png 190w,
+              Images/space-website_wqqxp4_c_scale,w_640.png 640w,
+              Images/space-website_wqqxp4_c_scale,w_935.png 935w,
+              Images/space-website_wqqxp4_c_scale,w_1187.png 1187w,
+              Images/space-website_wqqxp4_c_scale,w_1400.png 1400w"
+            src="Images/space-website_wqqxp4_c_scale,w_1400.png"
+            alt="the home page of a space tourism website"
+          ></img>
 
           <div className="project__grid__site__overlay">
             <a
@@ -71,9 +85,16 @@ export default function Project() {
         <div className="project__grid__site">
           <img
             className="project__grid__site__image"
-            src="Images/coffee-roasters.png"
-            alt="The homepage of a space tourism website"
-          />
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcSet="
+              Images/coffee-roasters_xctnl1_c_scale,w_190.png 190w,
+              Images/coffee-roasters_xctnl1_c_scale,w_638.png 638w,
+              Images/coffee-roasters_xctnl1_c_scale,w_931.png 931w,
+              Images/coffee-roasters_xctnl1_c_scale,w_1189.png 1189w,
+              Images/coffee-roasters_xctnl1_c_scale,w_1400.png 1400w"
+            src="Images/coffee-roasters_xctnl1_c_scale,w_1400.png"
+            alt="the home page of a coffee subscription website"
+          ></img>
 
           <div className="project__grid__site__overlay">
             <a

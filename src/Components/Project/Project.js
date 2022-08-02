@@ -1,15 +1,58 @@
 import React from "react";
 
+import { motion } from "framer-motion";
+
 import "../ProjectVariable/ProjectVariable.css";
 
 export default function Project() {
+  const variants = {
+    offscreen: {
+      y: 200,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 0.8,
+        bounce: 0.4,
+        delay: 0.2,
+      },
+    },
+  };
+
+  const titleVariants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        delay: 0.4,
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <div className="project" id="projects">
       <div className="project__title-container">
-        <h2 className="project__title-container__title">Projects</h2>
-        <hr className="project__title-container__line" />
+        <motion.h2
+          className="project__title-container__title"
+          initial="offscreen"
+          whileInView="onscreen"
+          variants={titleVariants}
+        >
+          Projects
+        </motion.h2>
       </div>
-      <div className="project__grid">
+      <motion.div
+        className="project__grid"
+        initial="offscreen"
+        whileInView="onscreen"
+        variants={variants}
+      >
         <div className="project__grid__site">
           <img
             className="project__grid__site__image"
@@ -117,7 +160,7 @@ export default function Project() {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

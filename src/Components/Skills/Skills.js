@@ -31,7 +31,7 @@ export default function Skills() {
     onscreen: {
       opacity: 1,
       transition: {
-        delay: 0.5,
+        delay: 0.4,
         duration: 0.5,
       },
     },
@@ -48,7 +48,6 @@ export default function Skills() {
         >
           Skills
         </motion.h2>
-        <hr className="skills__title-container__line" />
       </div>
 
       <motion.div

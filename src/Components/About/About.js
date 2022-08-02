@@ -12,7 +12,7 @@ export default function About() {
     onscreen: {
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.4,
         delay: 0.5,
       },
     },
@@ -28,9 +28,6 @@ export default function About() {
     >
       <div className="about__title-container">
         <h2 className="about__title">About me</h2>
-        <span>
-          <hr />
-        </span>
       </div>
       <div className="about__info-container">
         <p className="about__info-container__description">

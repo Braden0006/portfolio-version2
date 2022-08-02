@@ -1,13 +1,32 @@
 import React from "react";
+
+import { motion } from "framer-motion";
+
 import "../Components/About/About.css";
 
 export default function AboutDesktop() {
+  const variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: 0.5,
+      },
+    },
+  };
+
   return (
-    <div className="about" id="about">
+    <motion.div
+      className="about"
+      id="about"
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={variants}
+    >
       <div className="about__title-container">
-        {/* <span>
-          <hr />
-        </span> */}
         <svg
           className="about__svg"
           xmlns="http://www.w3.org/2000/svg"
@@ -260,6 +279,6 @@ export default function AboutDesktop() {
           continue learning and growing with it
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

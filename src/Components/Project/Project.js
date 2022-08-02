@@ -29,7 +29,7 @@ export default function Project() {
     onscreen: {
       opacity: 1,
       transition: {
-        delay: 0.4,
+        delay: 0.3,
         duration: 0.5,
       },
     },

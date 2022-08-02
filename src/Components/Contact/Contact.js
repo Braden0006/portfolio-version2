@@ -34,8 +34,20 @@ export default function Contact() {
         </form>
       </div>
       <span className="contact__icon-container">
-        <FaGithubSquare className="contact__icon" />
-        <FaLinkedin className="contact__icon" />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Braden0006"
+        >
+          <FaGithubSquare className="contact__icon" />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/braden-whitcher-814b23212/"
+        >
+          <FaLinkedin className="contact__icon" />
+        </a>
       </span>
     </div>
   );

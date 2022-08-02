@@ -10,7 +10,7 @@ export default function Skills() {
   const variants = {
     offscreen: {
       y: 200,
-      opacity: 0
+      opacity: 0,
     },
     onscreen: {
       y: 0,
@@ -19,7 +19,20 @@ export default function Skills() {
         type: "spring",
         duration: 0.8,
         bounce: 0.4,
-        delay: 0.2
+        delay: 0.2,
+      },
+    },
+  };
+
+  const titleVariants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        duration: 0.5,
       },
     },
   };
@@ -27,7 +40,14 @@ export default function Skills() {
   return (
     <div className="skills" id="skills">
       <div className="skills__title-container">
-        <h2 className="skills__title-container__title">Skills</h2>
+        <motion.h2
+          className="skills__title-container__title"
+          initial='offscreen'
+          whileInView='onscreen'
+          variants={titleVariants}
+        >
+          Skills
+        </motion.h2>
         <hr className="skills__title-container__line" />
       </div>
 

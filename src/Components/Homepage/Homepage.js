@@ -1,18 +1,44 @@
 import React from "react";
+
+import { motion } from "framer-motion";
+
 import "./Homepage.css";
 
 export default function Homepage() {
+  const variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        duration: 0.6,
+      },
+    },
+  };
+
   return (
     <main className="homepage" id="home">
-      <div className="homepage__info">
+      <motion.div
+        className="homepage__info"
+        initial="offscreen"
+        whileInView="onscreen"
+        variants={variants}
+      >
         <h1 className="homepage__info__title">Hi, my name is</h1>
         <h2 className="homepage__info__name">Braden</h2>
         <h2 className="homepage__info__position">
           I am a Front end Developer who enjoys building aesthetically pleasing
           webites
         </h2>
-      </div>
-      <div className="homepage__image">
+      </motion.div>
+      <motion.div
+        className="homepage__image"
+        initial="offscreen"
+        whileInView="onscreen"
+        variants={variants}
+      >
         <svg
           className="homepage__image__svg"
           xmlns="http://www.w3.org/2000/svg"
@@ -796,7 +822,7 @@ export default function Homepage() {
             opacity="0.2"
           />
         </svg>
-      </div>
+      </motion.div>
     </main>
   );
 }

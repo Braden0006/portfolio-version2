@@ -39,13 +39,13 @@
         width: 100%;
         opacity: 0.3;
         display: block;
-        transition: .5s ease;
+        transition: 0.5s ease;
         border-radius: 1rem;
       }
 
       .project__grid__site__overlay {
         opacity: 1;
-        transition: .5s ease;
+        transition: 0.5s ease;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -65,7 +65,7 @@
           margin-bottom: 1rem;
           cursor: pointer;
         }
-  
+
         .project__grid__site__overlay__code {
           background: transparent;
           color: $white;
@@ -98,8 +98,6 @@
         justify-content: space-between;
 
         .project__grid__site__overlay {
-
-
           .project__grid__site__overlay__code {
             font-size: $fifteen;
           }
@@ -123,7 +121,6 @@
     height: 80vh;
 
     .project__title-container {
-
       .project__title-container__title {
         text-align: center;
         font-size: $thirty;
@@ -131,12 +128,13 @@
     }
 
     .project__grid {
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       width: 90vw;
       gap: 3rem;
 
       .project__grid__site {
-
+        width: auto;
         .project__grid__site__image {
           opacity: 1;
         }

@@ -196,7 +196,7 @@ export default function Project() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/Braden0006/coffeeroasters-subscription-site"
+              href="https://github.com/Braden0006/myteam-website"
             >
               <button className="project__grid__site__overlay__code">
                 See Live Code
